@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Tracking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    </header>
+    
+    <div class="profile">
+        <h1>Set Goal</h1>
+        <label for="goal">Daily Water Goal:</label>
+        <input type="number" id="goal" value="2"> Liters
+        <button id="update-goal">Update Goal</button>
+        <label for="time">Goal Time (hours):</label>
+        <input type="number" id="goal-time" value="8"> Hours
+        <button id="start-timer">Start Timer</button>
+    </div>
+    
+    <h1>Drink Water</h1>
+    <h3 id="goal-text">Goal: 2 Liters</h3>
+
+    <div class="cup">
+        <div class="remained" id="remained">
+            <span id="liters"></span>
+            <small>Remained</small>
+        </div>
+
+        <div class="percentage" id="percentage"></div>
+    </div>
+
+    <p class="text">Select how many glasses of water that you have drank</p>
+
+    <select id="cup-size">
+        <option value="250">250 ml</option>
+        <option value="500">500 ml</option>
+        <option value="750">750 ml</option>
+    </select>
+
+    <div class="cups">
+        <div class="cup cup-small">250 ml</div>
+        <div class="cup cup-small">250 ml</div>
+        <div class="cup cup-small">250 ml</div>
+        <div class="cup cup-small">250 ml</div>
+        <div class="cup cup-small">250 ml</div>
+        <div class="cup cup-small">250 ml</div>
+        <div class="cup cup-small">250 ml</div>
+        <div class="cup cup-small">250 ml</div>
+    </div>
+
+    <div class="tips" id="tips"></div>
+</body>
+<script src="script.js"></script>
+</html>
